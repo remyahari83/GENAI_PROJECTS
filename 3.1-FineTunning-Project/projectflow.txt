@@ -1,0 +1,5 @@
+1. Create and run template.py and setup the project structure
+2. Create venv, pip install the requirements.txt
+3. Add data to train.jsonl and questions to eval_questions.jsonl
+4. Run the script1 then script2 and then script3. 
+(Please note - script2_qlora_finetune.py can't be executed on CPU only machines, needs GPU)

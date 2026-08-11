@@ -1,0 +1,15 @@
+{
+    "provider": "openai",
+    "openai":{
+        "model": "gpt-4o-mini",
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_tokens": 200
+    },
+    "gemini":{
+        "model": "gemini-2.5-flash",
+        "temperature": 0.6,
+        "top_p": 0.8,
+        "max_tokens": 300
+    }
+}
