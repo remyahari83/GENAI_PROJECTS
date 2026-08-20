@@ -1,0 +1,62 @@
+RUNNABLE BRANCH DEMO — Conditional Logic Flow
+Routes user queries intelligently to different chains.
+
+----------------------------------------
+💬 Enter your message ('exit' to quit): My production Kubernetes application is having issues. Some of my pods are restarting repeatedly.
+🤖 Assistant: It sounds like you're dealing with a common issue in Kubernetes where pods are restarting repeatedly. This can occur for various reasons, and troubleshooting it effectively involves a few steps.
+
+1. **Check Pod Status**: Use the command `kubectl get pods` to see the status of your pods. Look for the RESTARTS column to identify which pods are restarting.
+
+2. **Inspect Logs**: For the pods that are restarting, you can view their logs to understand why they are failing. Use the command `kubectl logs <pod-name>` to get the logs. Look for any error messages or stack traces that can provide insight into the issue.
+
+3. **Describe the Pod**: Use `kubectl describe pod <pod-name>` to get more detailed information about the pod's events. This command will show you the reason for any failures, which can give clues about the problem, such as insufficient resources, failed probes, or image pull errors.
+
+4. **Check Resource Limits**: Sometimes
+
+💬 Enter your message ('exit' to quit): Yes, the pods are showing CrashLoopBackOff.
+🤖 Assistant: Certainly! A `CrashLoopBackOff` status indicates that a pod is crashing repeatedly and Kubernetes is backing off from restarting it immediately. Here’s a systematic approach to troubleshoot and resolve this issue:
+
+### Step 1: Check Pod Status
+Run the following command to get the status of your pods:
+```bash
+kubectl get pods
+```
+Look for the pod(s) that are in `CrashLoopBackOff` status.
+
+### Step 2: Inspect Pod Logs
+To understand why the pod is crashing, inspect the logs:
+```bash
+kubectl logs <pod-name>
+```
+If the pod has multiple containers, specify the container name:
+```bash
+kubectl logs <pod-name> -c <container-name>
+```
+Look for any error messages or stack traces that may indicate the cause of the crash.
+
+### Step 3: Describe the Pod
+Get detailed information about the pod, including events and conditions:
+```bash
+kubectl describe pod <pod-name>
+``
+
+💬 Enter your message ('exit' to quit): The logs show ORA-12541: TNS:no listener. The application is running in Kubernetes but the Oracle database is outside the cluster.
+🤖 Assistant: To address the `ORA-12541: TNS:no listener` error in your Kubernetes application, which indicates that your application cannot connect to the Oracle database, follow these troubleshooting steps:
+
+### Troubleshooting Steps:
+
+1. **Check Oracle Database Connectivity:**
+   - Ensure that the Oracle database is running and accessible. You can do this by trying to connect to the database from a machine outside the Kubernetes cluster (e.g., your local machine or another server).
+   - Use a tool like `sqlplus` or any other Oracle client to test the connection.
+
+2. **Verify Connection String:**
+   - Confirm that the connection string used by your application in the Kubernetes deployment is correct. It should include the hostname, port, and service name of the Oracle database.
+   - Ensure the format is correct. It typically looks like:
+     ```
+     jdbc:oracle:thin:@//<hostname>:<port>/<service_name>
+     ```
+
+3. **Check Network Policies:**
+   - If
+
+💬 Enter your message ('exit' to quit): 
