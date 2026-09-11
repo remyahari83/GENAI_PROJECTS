@@ -1,0 +1,227 @@
+Introduction
+Large Language Models (LLMs) have been gaining popularity for the past few years. With the entry of OpenAI’s ChatGPT, there was a massive popularity gain in the Industry towards these LLMs. These LLMs are being worked upon to create different applications from question-answering chatbots to text generators to conversational bots and much more. Many new APIs are being created and each has its own way of training and testing our own data to it. This is where LangChain fits in. LangChain is a Python framework/library for developing applications powered with these LLMs. In this article, we will explore LangChain in detail, including chains, prompts, and agents, and also learn to build applications using it.
+
+Langchain
+Learning Objectives:
+To understand the LangChain Framework.
+To create applications with LangChain.
+To understand the components involved in LLM building.
+To build chains through LangChain for language models.
+To understand agents and prompts in LangChain.
+This article was published as a part of the Data Science Blogathon.
+
+Table of Contents
+Introduction
+What is LangChain? Why is it Necessary?
+Installing LangChain
+Building Applications with LLMs Wrapper
+Prompt Templates
+LangChain – Chaining Components Together
+Agents in LangChain
+Conclusion
+Frequently Asked Questions
+Free Certification Courses
+Machine Learning Certification for Beginners
+Understand Python basics • Data processing with pandas • Stats-driven EDA
+What is LangChain? Why is it Necessary?
+LangChain is a Python Library for building applications powered by LLMs. It not only takes care of connecting to different LLMs through APIs but even makes these LLMs connect to a data source and even makes them aware of their environment and interact with it. LangChain is also used to make RAG (retrieval augmented generation) applications. So how does it fit in? The thing is these large language models on their own in isolation may not be that powerful. Thus with LangChain, we can connect them with external data sources and computation, which will greatly help them to come up with good answers.
+
+LangChain thus makes it possible for us to make the language models connect to our very own database and create applications around them, allowing them to reference the data. With LangChain, not only you can create language models to create question-answer bots based on your data provided, but even make the language models take certain actions based on questions thus making them data-aware, agentic, and language-understanding. We will be looking into these actions further down in the article.
+
+LangChain framework contains components that constitute LLM wrappers, which are wrappers for popular language model APIs, from OpenAI, Hugging Face, etc. It even includes the prompt templates for creating our own prompts. LangChain, the name itself has the word chain, thus making it possible to chain multiple components together. And finally, agents, which we have talked about before, that allow the model to interact with external data and computations.
+
+Installing LangChain
+Like all other Python libraries, LangChain can be installed through Python’s pip command. The command for this is:
+
+pip install -qU langchain
+This will download and install the latest stable version of the LangChain framework in Python. The LangChain framework comes with many LLM wrappers, ChatBot Wrappers, Chat Schemas, and Prompt-Templates
+
+Apart from LangChain Packages, we need to even install the following packages, which we will be working on in this article
+
+pip install ai21
+pip install -qU huggingface_hub
+pip install -qU openai
+This will install the hugging face hub, where we will be able to work with hugging face APIs. OpenAI is installed, thus we can work with GPT models, and one more LLM model we have installed is the ai21, which is the Studio AI21 Language Model. We will be working with these 3 models, writing examples, and understanding how LangChain fits in.
+
+Building Applications with LLMs Wrapper
+LangChain provides wrappers to different models from LLMs to chat models to text embedding models. Large language models are the ones that take the text for the input and the output returned is a text string. In this section, we will take a look at the LangChain wrappers i.e. the standard interface it provides for different LLMs like Hugging Face, OpenAI, Studio AI21, etc.
+
+Let’s start by using the OpenAI model in LangChain. The respective code will be:
+
+# importing OpenAI Wrapper from LangChain
+from langchain.llms import OpenAI
+
+# provide your API KEY here
+os.environ["OPENAI_API_KEY"] = 'Your OpenAI API KEY'
+
+# initializing OpenAI LLM
+llm = OpenAI(model_name="text-ada-001")
+
+# query
+query = 'Tell me a joke'
+
+# model output
+print(llm(query))
+Here we import the OpenAI Wrapper from LangChain. Then we create an Instance of it named LLM and provide input, the model name we want to use. Now to this llm variable, we directly pass the query to get an output. Running this code has given the output:
+
+OpenAI | Langchain | Building Applications with LLMs
+We see that the model gives out a joke based on the query provided. Now let’s try this with the Hugging Face Model.
+
+# importing Hugging Face Wrapper from LangChain
+from langchain import HuggingFaceHub
+
+# provide your API KEY here
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = 'Your Hugging Face API Token'
+
+# initialize Hugging Face LLM
+flan_t5_model = HuggingFaceHub(
+    repo_id="google/flan-t5-xxl",
+    model_kwargs={"temperature":1e-1}
+)
+
+query1 = "Who was the first person to go to Space?"
+query2 = "What is 2 + 2 equals to?"
+
+generate = flan_t5_model.generate([query1, query2])
+print(generate.generations)
+We have followed the same process that we have followed with the OpenAI model. Here we are working with the flan-t5 model and have set the temperature to 1e-1. The only difference is that here we use the generate() method of the LLM model to pass the queries. This generate() method is used when you want to pass multiple queries at the same time. These are passed in the form of a list, which we have done so in the above. To get the model output, we then call the generations function. The resulting output we get after we run the code is:
+
+LangChain LLM building
+We see 2 answers from the model. The first is Yuri Gagarin, who was indeed the first person to enter the space and the second answer is 4, which is right. Finally, we will look at another LLM wrapper, this time for the AI21 Studio which provides us with the API access to Jurrasic – 2 LLM. Let’s look at the code:
+
+# importing AI21 Studio Wrapper from LangChain
+from langchain.llms import AI21
+
+# provide your API KEY here
+os.environ['AI21_API_KEY'] = 'Your API KEY'
+
+# initializing OpenAI LLM
+llm = AI21()
+
+# query
+query = 'Tell me a joke on Cars'
+
+# model output
+print(llm(query))
+Again, we see that the overall code implementation is almost similar to the OpenAI example that we have seen earlier. The only difference is the API Key and the LLM wrapper that is being imported which is the AI21. Here we have given a query to tell a joke on cars, let’s see how it performs
+
+LangChain
+The AI21 really did a fab job with the answer it provided. So in this section, we have learned, how to use different LLM wrappers from LangChain for working with different language models. Apart from these 3 wrappers that we have seen, LangChain provides many more wrappers to many other language models out there.
+
+Prompt Templates
+Prompts are a key part when developing applications with LLMs. Initially, one would have to retrain the entire model or have to work with completely a different model to do different tasks, like one model for translation, and one model for summarization. But the entry of prompt templates has changed it all. With prompt templates, we can make the language model do anything from translation to question answering, to text generation and summarization of different data.
+
+We will now take a look into prompt templates in LangChain with the OpenAI models. Let’s begin by creating a template and then giving it to LangChain’s PromptTemplate class.
+
+from langchain import PromptTemplate
+
+# creating a Prompt Template
+template = """The following is a conversation between a time traveler and a 
+historian. The time traveler is from the future and tends to make humorous 
+comparisons between past and future events:
+
+Historian: {query}
+
+Time Traveler: """
+
+# assigning the template to the PromptTemplate Class
+prompt = PromptTemplate(
+    input_variables=["query"],
+    template=template
+)
+The first step is to write a template. Here we have written a template stating that we want the AI to act like a funny time traveler, that is we have set a context for the AI, and how it should be acting. Then we provide the query considering we are a historian. The query is present in {} because we want that part to be replaced by the question we want to ask. Then this template is given to the PromptTemplate class from LangChain. Here we pass the template to the template variable, and we then tell the input variable as “query” (the input variable is the place where our questions sit).
+
+Let’s try to create a question and observe the prompt that will be generated.
+
+# printing an example Prompt
+print(prompt.format(query='Are there flying cars?'))
+Building LLMs with LangChain
+Here in the output, we see that {query} is replaced by the question that we have given to the “query” variable that was given to the format() function of the Prompt Instance. So the PromptTemplate does the job of formatting our query before we can send it to the model. Now, we have successfully created a prompt template. We will now test this template with an OpenAI model. The following will be the code:
+
+# creating the llm wrapper
+llm = OpenAI(model_name="text-davinci-003",temperature=1)
+
+# model's output to the query
+print(
+    llm(prompt.format(
+        query='Are there flying cars?')
+      )
+    )
+Here again, we are working with the LLM wrapper from langchain for OpenAI language model. We are then giving the prompt directly to the LLM, just like how we have passed in the beginning code example. This will then print the output generated by the model, which is:
+
+Output
+Ha! No way, although I did see a farmer the other day using a robotic scarecrow to shoo away birds from his cornfield. Does that count?
+
+Seeing the output, we can say that the Language model did indeed act like a time traveler. Prompt templates can be provided with multiple queries. Let’s try to create a template to provide multiple inputs to the Language Model
+
+multi_query_template = """Answer the following questions one at a time.
+
+Questions:
+{questions}
+
+Answers:
+"""
+long_prompt = PromptTemplate(
+    template=multi_query_template,
+    input_variables=["questions"]
+)
+
+qs = [
+    "Which IPL team won the IPL in the 2016 season?",
+    "How many Kilometers is 20 Miles?",
+    "How many legs does a lemon leaf have?"
+]
+
+print(
+    llm(prompt.format(
+        query=qs)
+      )
+    )
+The above depicts the code for multiple query templates. Here in the prompt template, we have written at the start, that the questions must be answered one at a time. Then we provide this template to the PromptTemplate class. Store all the questions in a list called qs. Just like before, we pass this qs list to the query variable in the prompt.format() function and give it to the model. Now let’s check the output produced by the language model
+
+LangChain Framework for Building LLMs
+We see that the OpenAI language model has given all the right output answers one by one. So far, what we have done with Prompt Template is just a glimpse. We can do much more using the prompt components from the LangChain framework. One example is we can perform Few Shot Learning by providing some examples in the context of the Prompt Template itself.
+
+LangChain – Chaining Components Together
+The LangChain, the name itself has the word Chain in it. In this section, we will look at the Chain Module of LangChain. When developing applications, using Language Models in isolation is fine, i.e. for small applications, but when creating complex ones, it’s better to chain LLMs, i.e. either chaining two similar LLMs or two different ones. LangChain provides a Standard Interface for chaining different Language Models together. Chains can be used to connect different Components like LLMs and even Prompts together to perform a particular action
+
+Example
+Let’s start by taking a simple example of chaining an OpenAI Language Model with a Prompt.
+
+from langchain.llms import OpenAI
+from langchain import PromptTemplate, LLMChain
+
+# creating a Prompt Template
+template = """The following is a conversation between a human and an AI 
+Assistant. Whatever the human asks to explain, the AI assistant
+explains it with humour and by taking banana as an example
+
+Human: {query}
+
+AI: """
+
+# assigning the template to the PromptTemplate Class
+prompt = PromptTemplate(
+    input_variables=["query"],
+    template=template
+)
+
+# query
+query = "Explain Machine Learning?"
+
+# creating an llm chain
+llm = OpenAI(model_name="text-davinci-003",temperature=1)
+llm_chain = LLMChain(prompt=prompt, llm=llm)
+
+# model output
+print(llm_chain.run(query))
+Create a template, saying that every question asked by the user is answered by the AI in a funny way, and take the example of a banana.
+Then this template passed to the PromptTemplate() function thus creating a Prompt Template out of it.
+Then with the OpenAI LLM wrapper, we initialize the OpenAI model.
+We have imported the LLMChain from LangChain. LLMChain is one of the Simplest Chains provided by LangChain. To this, we pass the Prompt Template and the Language Model.
+Finally, we pass the query directly to the llm_chain’s run() function.
+What LLMChain does is, first it sends the input query to the first element in the chain, i.e. to the Prompt, i.e. the PromptTemplate. Here the input gets formatted to a particular Prompt. This formatted Prompt is then passed to the next element in the chain, i.e. the language model. So a chain can be considered like a Pipeline. Let’s see the output generated.
+
+Output:
+
+Machine Learning is like a banana. You keep giving it data and it slowly develops the skills it needs to make more intelligent decisions. It’s like a banana growing from a little green fruit to a fully ripe and delicious one. With Machine Learning, the more data you give it, the smarter it gets!
