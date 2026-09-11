@@ -1,0 +1,5 @@
+OPENAI_API_KEY = xxxxxxxxxxxxxxxx
+GOOGLE_API_KEY = xxxxxxxxxxxxxxxxx
+
+PINECONE_API_KEY = xxxxxxxxxxxxxxxxx
+PINECONE_ENV = us-east-1
