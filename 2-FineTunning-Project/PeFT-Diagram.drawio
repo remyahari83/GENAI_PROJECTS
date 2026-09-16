@@ -1,0 +1,285 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2" pages="3">
+  <diagram name="script1_baseline_chat" id="WzmFPuCOmYgV0nu7QBNH">
+    <mxGraphModel dx="1570" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-7" target="Soq4OGA3rUlHQ6-bqQ-6-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="320" y="340" width="350" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-1" target="Soq4OGA3rUlHQ6-bqQ-6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;START&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="790" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-2" target="Soq4OGA3rUlHQ6-bqQ-6-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-2" target="Soq4OGA3rUlHQ6-bqQ-6-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Load Config:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;DATA_DIR&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1002&quot; data-start=&quot;991&quot; data-section-id=&quot;egpsrz&quot;&gt;EVAL_FILE&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1039&quot; data-start=&quot;1005&quot; data-section-id=&quot;1h6up8&quot;&gt;BASE_MODEL = &quot;microsoft/phi-1_5&quot;&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="180" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-3" target="Soq4OGA3rUlHQ6-bqQ-6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Load Tokenizer &amp;amp; Pre-Trained Model&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;1279&quot; data-start=&quot;1244&quot; data-section-id=&quot;4nezeg&quot;&gt;&lt;code style=&quot;&quot; data-end=&quot;1279&quot; data-start=&quot;1246&quot;&gt;AutoTokenizer.from_pretrained()&lt;/code&gt;&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1324&quot; data-start=&quot;1282&quot; data-section-id=&quot;yz2x6j&quot;&gt;&lt;code style=&quot;&quot; data-end=&quot;1324&quot; data-start=&quot;1284&quot;&gt;AutoModelForCausalLM.from_pretrained()&lt;/code&gt;&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="420" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-4" target="Soq4OGA3rUlHQ6-bqQ-6-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Load Questions from JSONL File&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li data-end=&quot;1620&quot; data-start=&quot;1591&quot; data-section-id=&quot;1qxvwih&quot;&gt;Open file using &lt;code data-end=&quot;1620&quot; data-start=&quot;1609&quot;&gt;jsonlines&lt;/code&gt;&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;1651&quot; data-start=&quot;1623&quot; data-section-id=&quot;1z0grm1&quot;&gt;Extract &lt;code data-end=&quot;1645&quot; data-start=&quot;1633&quot;&gt;&quot;question&quot;&lt;/code&gt; field&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;1669&quot; data-start=&quot;1654&quot; data-section-id=&quot;d1vv82&quot;&gt;Store in list&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="360" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-5" value="Loop Through Questions" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="500" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-8" target="Soq4OGA3rUlHQ6-bqQ-6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Create Prompt:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;This is where &lt;span data-end=&quot;2110&quot; data-start=&quot;2081&quot;&gt;prompt engineering begins&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="335" y="720" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-9" target="Soq4OGA3rUlHQ6-bqQ-6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Tokenization:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;tokenizer(prompt, return_tensors=&quot;pt&quot;)&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1039&quot; data-start=&quot;1005&quot; data-section-id=&quot;1h6up8&quot;&gt;Convert Text → Tokens&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="720" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-10" target="Soq4OGA3rUlHQ6-bqQ-6-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Generate Response:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Model Generates Output Tokens&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Inside logic:&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;2584&quot; data-start=&quot;2567&quot;&gt;torch.no_grad()&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; → inference mode&lt;/span&gt;&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;model.generate()&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="1000" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-11" target="Soq4OGA3rUlHQ6-bqQ-6-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Decode Output:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;&quot;&gt;&lt;li style=&quot;font-size: 14px;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Convert Tokens → Text&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;tokenizer.decode(...)&lt;/span&gt;&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="655" y="1012.5" width="235" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Soq4OGA3rUlHQ6-bqQ-6-12" target="Soq4OGA3rUlHQ6-bqQ-6-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Print Result:&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;&quot;&gt;&lt;li style=&quot;font-size: 14px;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Display Question &amp;amp; Model Answer&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="655" y="1220" width="235" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Soq4OGA3rUlHQ6-bqQ-6-23" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;END&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1217.5" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XZ398_2yqzSJHoM0vSVl" name="script2_lora_finetune">
+    <mxGraphModel dx="2381" dy="1250" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-4" target="W3XdCgRmsYi7oLbwEiwy-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;START&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;LoRA Fine-Tuning Script&lt;/font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="725" y="20" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-7" target="W3XdCgRmsYi7oLbwEiwy-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+              <mxPoint x="550" y="480" />
+            </Array>
+            <mxPoint x="670" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-7" target="W3XdCgRmsYi7oLbwEiwy-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-7" target="W3XdCgRmsYi7oLbwEiwy-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Load Config:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;790&quot; data-start=&quot;756&quot; data-section-id=&quot;a2xar0&quot;&gt;BASE_MODEL = microsoft/phi-1_5&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;820&quot; data-start=&quot;793&quot; data-section-id=&quot;1jot20d&quot;&gt;DATA_PATH = train.jsonl&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;837&quot; data-start=&quot;823&quot; data-section-id=&quot;i1t4mv&quot;&gt;OUTPUT_DIR&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;890&quot; data-start=&quot;840&quot; data-section-id=&quot;1mvluz7&quot;&gt;BATCH_SIZE, GRAD_ACCUM, EPOCHS, LR, MAX_LENGTH&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="585" y="180" width="530" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-9" target="W3XdCgRmsYi7oLbwEiwy-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-9" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Load Tokenizer&amp;nbsp;&amp;amp; Base Model&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="420" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-11" target="W3XdCgRmsYi7oLbwEiwy-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-11" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Load Training Dataset&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;1620&quot; data-start=&quot;1591&quot; data-section-id=&quot;1qxvwih&quot;&gt;Load Dataset from JSONL&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1651&quot; data-start=&quot;1623&quot; data-section-id=&quot;1z0grm1&quot;&gt;load_dataset(&quot;json&quot;, data_files=DATA_PATH)&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="270" y="420" width="390" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-14" target="W3XdCgRmsYi7oLbwEiwy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-14" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Tokenize Dataset:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Prepare inputs and labels for fine-tunning&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="665" y="620" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-16" target="W3XdCgRmsYi7oLbwEiwy-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-16" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Apply LoRA&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="535" y="800" width="630" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-38" target="W3XdCgRmsYi7oLbwEiwy-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="652.5" y="2147.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-22" target="W3XdCgRmsYi7oLbwEiwy-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-22" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Save LoRA Adapter:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;model.save_pretrained(OUTPUT_DIR)&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;Helvetica&quot; style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Only adapter weights are saved, not full model&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="2080" width="405" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-23" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;END&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;End Fine-Tuning Process&lt;/font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="190" y="2078" width="240" height="122.5" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-30" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Define LoRA Config&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;li data-end=&quot;2200&quot; data-start=&quot;2191&quot; data-section-id=&quot;16766vz&quot;&gt;r = 8&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;2223&quot; data-start=&quot;2203&quot; data-section-id=&quot;1yc3e0l&quot;&gt;lora_alpha = 128&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;2271&quot; data-start=&quot;2226&quot; data-section-id=&quot;a4dp1s&quot;&gt;target_modules = Wqkv, out_proj, fc1, fc2&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;2297&quot; data-start=&quot;2274&quot; data-section-id=&quot;1x0ra2u&quot;&gt;lora_dropout = 0.05&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;2315&quot; data-start=&quot;2300&quot; data-section-id=&quot;1gsri92&quot;&gt;bias = none&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;2343&quot; data-start=&quot;2318&quot; data-section-id=&quot;6i00co&quot;&gt;task_type = CAUSAL_LM&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="675" y="870" width="380" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-31" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;font-size: 18px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Attach LoRA Adapters to Model&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Only LoRA layers are trainable&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="675" y="1070" width="380" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-32" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Apply LoRA&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="785" y="820" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-33" target="W3XdCgRmsYi7oLbwEiwy-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="615" y="1270" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-33" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Define Training Arguments&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;li data-end=&quot;2709&quot; data-start=&quot;2691&quot; data-section-id=&quot;vwsule&quot;&gt;batch_size = 1&lt;/li&gt;&lt;li data-end=&quot;2739&quot; data-start=&quot;2710&quot; data-section-id=&quot;1tpzuv9&quot;&gt;gradient_accumulation = 4&lt;/li&gt;&lt;li data-end=&quot;2755&quot; data-start=&quot;2740&quot; data-section-id=&quot;1ynpvrq&quot;&gt;epochs = 10&lt;/li&gt;&lt;li data-end=&quot;2780&quot; data-start=&quot;2756&quot; data-section-id=&quot;ya14pe&quot;&gt;learning_rate = 2e-4&lt;/li&gt;&lt;li data-end=&quot;2803&quot; data-start=&quot;2781&quot; data-section-id=&quot;bbxbex&quot;&gt;logging_steps = 10&lt;/li&gt;&lt;li data-end=&quot;2826&quot; data-start=&quot;2804&quot; data-section-id=&quot;b9rg41&quot;&gt;save_strategy = no&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="635" y="1284" width="430" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W3XdCgRmsYi7oLbwEiwy-34" target="W3XdCgRmsYi7oLbwEiwy-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-34" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Initialize Trainer&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;li data-end=&quot;2998&quot; data-start=&quot;2989&quot; data-section-id=&quot;boqozr&quot;&gt;model&lt;/li&gt;&lt;li data-end=&quot;3018&quot; data-start=&quot;3001&quot; data-section-id=&quot;1kt08ls&quot;&gt;training_args&lt;/li&gt;&lt;li data-end=&quot;3032&quot; data-start=&quot;3021&quot; data-section-id=&quot;1jebm62&quot;&gt;dataset&lt;/li&gt;&lt;li data-end=&quot;3052&quot; data-start=&quot;3035&quot; data-section-id=&quot;kki2o3&quot;&gt;data_collator&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1510" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="W3XdCgRmsYi7oLbwEiwy-38" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Training Loop&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;h4 data-end=&quot;3305&quot; data-start=&quot;3283&quot;&gt;&lt;ul&gt;&lt;li&gt;Forward Pass:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Input tokens → model prediction&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Compute Loss:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Compare predictions with labels&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Backward Pass:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Compute gradients&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Gradient Accumulation:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Accumulate for 4 steps&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Update LoRA Weights:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Only adapter weights updated&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h4&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1760" width="620" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Cn6_goEBgJCrkOXMQ_7t" name="script3_chat_with_adapter">
+    <mxGraphModel dx="2216" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cythhNJVQjZ_c6kEokiY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-2" target="cythhNJVQjZ_c6kEokiY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;START&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Start Post-LoRA Evaluation&lt;/font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="725" y="20" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-6" target="cythhNJVQjZ_c6kEokiY-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-6" target="cythhNJVQjZ_c6kEokiY-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-6" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Load Config:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li data-end=&quot;705&quot; data-start=&quot;671&quot; data-section-id=&quot;a2xar0&quot;&gt;BASE_MODEL = microsoft/phi-1_5&lt;/li&gt;&lt;li data-end=&quot;736&quot; data-start=&quot;708&quot; data-section-id=&quot;lduvyt&quot;&gt;ADAPTER_PATH = lora_acme&lt;/li&gt;&lt;li data-end=&quot;775&quot; data-start=&quot;739&quot; data-section-id=&quot;1cttztg&quot;&gt;EVAL_FILE = eval_questions.jsonl&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="687.5" y="180" width="325" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-8" target="cythhNJVQjZ_c6kEokiY-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-8" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Load Tokenizer&amp;nbsp;&amp;amp; Base Model &amp;amp;&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;LoRA Adapter&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;PeftModel.from_pretrained(base_model, ADAPTER_PATH)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Base model + learned LoRA weights combined at runtime&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="395" width="540" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-10" target="cythhNJVQjZ_c6kEokiY-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-10" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Load Evaluation Questions&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li data-end=&quot;1653&quot; data-start=&quot;1640&quot; data-section-id=&quot;1xc6fvg&quot;&gt;Read file&lt;/li&gt;&lt;li data-end=&quot;1684&quot; data-start=&quot;1656&quot; data-section-id=&quot;1npdu3t&quot;&gt;Extract &#39;question&#39; field&lt;/li&gt;&lt;li data-end=&quot;1704&quot; data-start=&quot;1687&quot; data-section-id=&quot;7ugkeq&quot;&gt;Store in list&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="230" y="415" width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-12" target="cythhNJVQjZ_c6kEokiY-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-12" value="&lt;div style=&quot;text-align: right;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Set Model to Evaluation Mode&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;model.eval()&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Disables training behavior like dropout&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="865" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-14" target="cythhNJVQjZ_c6kEokiY-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850.0000000000005" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-14" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#CCFFFF;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1090" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-18" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;End Evaluation&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1530" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-21" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Generate Response&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="685" y="1100" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-30" target="cythhNJVQjZ_c6kEokiY-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-30" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Loop Through Questions&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;988&quot; data-start=&quot;978&quot; data-section-id=&quot;1bfcnaw&quot;&gt;Process each question&lt;/li&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="237.5" y="660" width="365" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-32" target="cythhNJVQjZ_c6kEokiY-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-32" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Create Prompt &amp;amp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Tokenize Input&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=center;fillColor=#A9C4EB;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="880" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cythhNJVQjZ_c6kEokiY-35" target="cythhNJVQjZ_c6kEokiY-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cythhNJVQjZ_c6kEokiY-35" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;Decode Output &amp;amp; Print Clean Answer&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFFF;" vertex="1" parent="1">
+          <mxGeometry x="565" y="1300" width="590" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

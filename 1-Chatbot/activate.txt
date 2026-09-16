@@ -1,0 +1,16 @@
+py -3.11 --version
+
+You should see something like:
+
+Python 3.11.9
+Delete your current virtual environment:
+Remove-Item -Recurse -Force myenv
+Create a new one with Python 3.11:
+py -3.11 -m venv myenv
+Activate it:
+PS D:\remya\IIT patna\GEN AI\GEN_AI\2-first-chatbot> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+PS D:\remya\IIT patna\GEN AI\GEN_AI\2-first-chatbot> .\myenv\Scripts\Activate.ps1
+Upgrade pip:
+python -m pip install --upgrade pip
+Install your dependencies using the correct command:
+pip install -r requirements.txt
